@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.catImg{
+    margin-right: -180px;
+    width: 350px;
+    height: auto;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.aboutMeContainer{
+    margin-top: 45px;
+    margin-bottom: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutMe{
+    line-height: 24px;
+    font-size: 18px;
+    background-color: aliceblue;
+    max-width: 550px;
+    padding: 40px 30px 55px 210px;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.aboutMe h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 500;
+}
+.aboutMe p{
+    font-family: 'Roboto', sans-serif;
+    color: #6b6b6b;
+}
+.iconContainer{
+    display: flex;
+    justify-content: flex-end;
+    gap: 14px;
+    margin-bottom: -30px;
+    margin-right: 38px;
+}
+.iconContainer i{
+    cursor: pointer;
+}
+.background{
+    background-color: #1993b0;
+    position: absolute;
+    height: 1940px;
+    width: 100%;
+    top: -1600px;
+    transform: skewY(-10deg);
+    z-index: -1;
+}
+
+/* Mobile  */
+@media (max-width: 600px) {
+    .background{
+        width: 650px;
+    }
+    .catImg{
+        margin-right: 0px;
+    }
+    .aboutMe{
+       width: 200px;
+       padding: 50px;
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+       box-shadow: none;
+       background-color: transparent;
+    }
+    .aboutMeContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .iconContainer{
+        margin-right: 50px;
+    }
+  
+}
+
+/* Tablet */
+@media (max-width: 900px){
+    body{
+        width: 90%;
+    }
+    .aboutMeContainer{
+        padding: 0 40px 0;
+    }
+    .background{
+        width: 1050px;
+    }
+}
+
+
+/* My Work Section */
+.projectDisplayContainer{
+    background-color: #1993b0;
+    max-width: 350px;
+    min-width: 200px;
+    margin: 10px 0 30px 0;
+    height: 345px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.workTopRow, .workBottomRow{
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+}
+
+.workDescription{
+    height: 42%;
+    background-color: #f8f8f8;
+}
+.projectName{
+    margin-top: 0;
+    padding: 15px 0 0px 13px;
+    font-size: 20px;
+}
+.description{
+    padding: 0px 0px 10px 13px;
+}
+.screenShot{
+    height: 58%;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: rgb(236, 228, 228);
+    text-align: center;
+}
+.myWorkHeader{
+    margin-left: 330px;
+    font-size: 35px;
+    margin-bottom: 5px;
+    font-family: 'Playfair Display', serif;
+}
+.red{ background-color: #f14848;}
+.purple{ background-color: #a83ca8;}
+.green{ background-color: #8eda8e;}
+.pink{ background-color: #fca7b5;}
+.orange{ background-color: #fab941;}
+.blue{ background-color: #8dc6e7;}
+
+.projectInfoContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.projectInfoIcons{
+    margin-right: 20px;
+}
+.projectInfoIcons i{
+    margin-left: 10px ;
+}
