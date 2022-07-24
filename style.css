@@ -1,126 +1,155 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
+/* ABOUT ME - PHONE SIZE */
+* {
+    box-sizing: border-box;
+}
 
-body{
+body {
     margin: 0;
-    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
-.catImg{
-    margin-right: -180px;
-    width: 350px;
+
+.catImg {
+    margin-top: 5px;
+    width: 360px;
     height: auto;
-    z-index: 1;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 4px;
 }
-.aboutMeContainer{
-    margin-top: 45px;
-    margin-bottom: 130px;
+
+.aboutMeContainer {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    margin-bottom: 80px;
 }
-.aboutMe{
-    line-height: 24px;
-    font-size: 18px;
-    background-color: aliceblue;
-    max-width: 550px;
-    padding: 40px 30px 55px 210px;
-    position: relative;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-.aboutMe h1{
+
+.aboutMe {
     font-family: 'Playfair Display', serif;
-    font-size: 32px;
-    font-weight: 500;
+    width: 65%;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
 }
 .aboutMe p{
-    font-family: 'Roboto', sans-serif;
     color: #6b6b6b;
+    font-family: 'Roboto', sans-serif;
+
 }
-.iconContainer{
-    display: flex;
-    justify-content: flex-end;
-    gap: 14px;
-    margin-bottom: -30px;
-    margin-right: 38px;
-}
-.iconContainer i{
-    cursor: pointer;
-}
-.background{
+
+.background {
     background-color: #1993b0;
     position: absolute;
-    height: 1940px;
+    height: 1955px;
     width: 100%;
     top: -1600px;
     transform: skewY(-10deg);
     z-index: -1;
 }
 
-/* Mobile  */
-@media (max-width: 600px) {
-    .background{
-        width: 650px;
+/* ABOUT ME - TABLET */
+@media(min-width: 700px) {
+    .catImg {
+        width: 350px;
+        height: auto;
+        z-index: 1;
+        margin-left: -350px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     }
+
+    .aboutMeContainer {
+        width: 50%;
+        margin: auto;
+        margin-top: 45px;
+        margin-bottom: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    .aboutMe {
+        margin-top: -300px;
+        line-height: 24px;
+        font-size: 20px;
+        background-color: aliceblue;
+        min-width: 550px;
+        padding: 40px 30px 55px 210px;
+        position: relative;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+
+    .aboutMe p {
+        font-size: 21px;
+        color: #6b6b6b;
+    }
+}
+
+/* ABOUT ME - DESKTOP */
+@media(min-width: 900px) {
     .catImg{
-        margin-right: 0px;
+        margin-right: 150px;
+        z-index: 1;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
     .aboutMe{
-       width: 200px;
-       padding: 50px;
-       display: flex;
-       flex-direction: column;
-       text-align: center;
-       box-shadow: none;
-       background-color: transparent;
+        line-height: 24px;
+        background-color: aliceblue;
+        max-width: 450px;
+        padding: 10px 50px 90px 210px;
+        position: relative;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     }
-    .aboutMeContainer{
-        display: flex;
-        flex-direction: column;
+    .aboutMe h1{
+        font-family: 'Playfair Display', serif;
+        font-size: 32px;
+        font-weight: 500;
+    }
+    .aboutMe p{
+        font-family: 'Roboto', sans-serif;
+        color: #6b6b6b;
     }
     .iconContainer{
-        margin-right: 50px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 14px;
+        margin-bottom: -30px;
+        margin-right: 38px;
     }
-  
-}
 
-/* Tablet */
-@media (max-width: 900px){
-    body{
-        width: 90%;
-    }
-    .aboutMeContainer{
-        padding: 0 40px 0;
-    }
-    .background{
-        width: 1050px;
-    }
 }
 
 
-/* My Work Section */
-.projectDisplayContainer{
-    background-color: #1993b0;
-    max-width: 350px;
-    min-width: 200px;
-    margin: 10px 0px 90px 200px;
-    height: 345px;
+
+/* MY WORK SECTION - PHONE */
+.myWorkContainer {
+    width: 70%;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.projectDisplayContainer {
+    margin: 5px 0px 50px 0px;
+    max-width: 300px;
+    height: 250px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.workDescription{
-    height: 42%;
+.workDescription {
+    padding: 10px;
+    font-size: 17px;
+    height: 62%;
     background-color: #f8f8f8;
 }
-.projectName{
+
+.projectName {
     margin-top: 0;
     padding: 15px 0 0px 13px;
     font-size: 20px;
 }
-.description{
-    padding: 0px 0px 10px 13px;
-}
-.screenShot{
-    height: 58%;
+
+.screenShot {
+    height: 45%;
     font-family: 'Playfair Display', serif;
     display: flex;
     justify-content: center;
@@ -129,81 +158,143 @@ body{
     color: rgb(236, 228, 228);
     text-align: center;
 }
-.myWorkHeader{
-    margin-left: 200px;
+
+.myWorkHeader {
     font-size: 35px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     font-family: 'Playfair Display', serif;
 }
-.red{ background-color: #f14848;}
-.purple{ background-color: #a83ca8;}
-.green{ background-color: #8eda8e;}
-.pink{ background-color: #fca7b5;}
-.orange{ background-color: #fab941;}
-.blue{ background-color: #8dc6e7;}
 
-.allProjectsContainer{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.red {
+    background-color: #f14848;
 }
 
-.projectInfoContainer{
+.purple {
+    background-color: #a83ca8;
+}
+
+.green {
+    background-color: #8eda8e;
+}
+
+.pink {
+    background-color: #fca7b5;
+}
+
+.orange {
+    background-color: #fab941;
+}
+
+.blue {
+    background-color: #8dc6e7;
+}
+
+.projectInfoContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.projectInfoIcons{
+
+.projectInfoIcons {
     margin-right: 20px;
 }
-.projectInfoIcons i{
-    margin-left: 10px ;
+
+.projectInfoIcons i {
+    margin-left: 10px;
 }
 
-/* tablet */
-@media (max-width: 900px) {
-    .myWorkHeader{
-        margin-left: 60px;
-    }
 
-    .allProjectsContainer{
+/* MY WORK SECTION - TABLET */
+@media(min-width: 700px) {
+    .myWorkContainer{
+        margin-bottom: 50px;
+    }
+    .allProjectsContainer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        column-gap: 80px;
     }
-
     .projectDisplayContainer{
-        
+        min-width: 300px;
+        margin-left: -45px;
     }
-}
-
-/* phone */
-@media (max-width: 900px) {
     .myWorkHeader{
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        margin-bottom: 20px;
     }
+}
 
-    .allProjectsContainer{
+/* MY WORK SECTION - DESKTOP */
+@media(min-width: 900px) {
+    .myWorkContainer{
+        margin-bottom: 50px;
+    }
+    .allProjectsContainer {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .projectDisplayContainer{
+        min-width: 330px;
+        margin-left: 55px;
+    }
+    .myWorkHeader{
+        margin-bottom: 20px;
     }
 }
 
 
-/* Contact section */
-.contactContainer{
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    gap: 150px;
+
+/* CONTACT ME SECTION - PHONE */
+.contactContainer {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(230, 230, 230);
     background-color: #1993b0;
-    display: flex;
-    height: 440px;
-    color: #f5f5f5;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.contactLeftInfo h2 {
+    padding-top: 20px;
     font-family: 'Playfair Display', serif;
 }
-.contactIcons i{
-    color: #161616;
+
+.catImg2 {
+    margin-top: 20px;
+    border-radius: 5px;
 }
 
+.contactIcons {
+    color: black;
+}
+
+/* CONTACT ME SECTION - TABLET */
+@media(min-width: 700px) {
+    .contactContainer{
+        display: flex;
+    }
+    .contactrightInfo{
+        display: flex;
+        align-items: center;
+        margin-right: 8px;
+    }
+}
+
+
+/* CONTACT ME SECTION - DESKTOP */
+@media(min-width: 900px) {
+    .contactContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .contactrightInfo{
+        display: flex;
+        align-items: center;
+        margin-right: 8px;
+    }
+    .catImg2 {
+       width: 450px;
+       height: auto;
+       margin-right: 20px;
+    }
+}
